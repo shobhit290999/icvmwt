@@ -25,6 +25,9 @@ body h1{
 }
 .card-title{
     color: black;
+    text-align: center;
+    margin:auto;
+    padding:10px;
     
 }
 
