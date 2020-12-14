@@ -3,6 +3,7 @@
 <html>
 <head>
 <title> ICEEE 2021 | MMMUT </title>
+<link rel="icon" type="image/png" href="image/lo.svg" sizes="70x70">	
 <link href="css/boostrap.css" rel="stylesheet" type="text/css">
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 <link href="css/jquery.jConveyorTicker.min.css" rel="stylesheet" type="text/css">
@@ -100,40 +101,52 @@ margin-left:-10px;
 
 
    <header class="container-fluid">
-		<div class="row">
-         <div class="col-sm-4">
-		<div class="left"><img class="logo1" src="image/lo.svg" width="100px;" style="margin-top:30px;" >
-		</div>
-		<div class="right">
-      <div ><h2 style="color: #063852"><b>ICVMWT 2021 </b></h2><h5>  
-        <span style="color:#4b4f47; font-size: 16px;">International Conference On<br> Electrical And Electronics Engineering </span>
-        <br><p style=" text-align:inherit; color: #CB0000; padding-top: 0px;">14-15 Feb 2021 MMMUT GORAKHPUR,UP</p>
-       
-        </h5> </div>
+    <div class="row">
+      <div class="col-sm-4" id='hit' >
+        <div class="left"><img class="logo1" src="image/lo.svg" width="100px;" style="margin-top:30px;">
+        </div>
+        <div class="right">
+          <div>
+            <h2 style="color: #063852"><b>ICVMWT 2021 </b></h2>
+            <h5>
+              <span style="color:#4b4f47; font-size: 16px;">International Conference On VLSI & Microwave and Wireless Technologies </span>
+              <br>
+              <p style=" text-align:left; color: #CB0000; padding-top: 10px;margin-left:0px">20-21 March , 2021 </p>
+
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 hid ut" id='fit'>
+        <p>
+          <center>
+            <h5><b>Jointly Organised By:</b></h5>
+            <h4>Madan Mohan Malaviya University of Technology, Gorakhpur (U.P.) INDIA<br>
+              &<br>
+              J.K. Institute of Applied Physics and Technology, University of Allahabad<br>
+              &<br>
+              Manipal University Jaipur, India</h4>
+          </center>
+
+        </p>
+      </div>
+      <div class="col-sm-4 hid">
+        <center>
+        <a href="http://mmmut.ac.in/"><img src="image/mm.png" style='height: 90px; width: 90px;' class='mine'></a>
+        <a href="https://www.nd.gov"><img src="image/jkia.png" style='height: 90px; width: 90px;' class='mine'></a>
+        <a href="http://www.ieee.org/"> <img src="image/manipo.png" style='height: 90px; width: 90px;'
+            class='mine'></a>
+        <a href="http://www.ieee.org/"> <img src="image/Publish.png" style='height: 90px; width: 90px;'
+            class='mine'></a>
+            </center>
+
+      </div>
+
     </div>
-</div>
 
-<div class="col-sm-4 hid ut"  >
-  <p>
-    <center><h5><b>Jointly Organised By:</b></h5>
-    <h4>Madan&nbsp; Mohan&nbsp; Malaviya&nbsp; University&nbsp; of
-    Technology, Gorakhpur&nbsp;(U.P) &nbsp;INDIA</h4>
-    <h4>&</h4>
-    <h4>Manipal&nbsp; University&nbsp;Jaipur,&nbsp; India</h4>
-    </center>
+  </header>
 
-	</p>
-</div>
-<div class="col-sm-4 hid">
-	<a href="http://mmmut.ac.in/"><img src="image/mmmut.png" style="margin-top: 20px;"></a>
-	<a href="https://www.nd.gov"><img src="image/mmmut.png"   style="margin-top: 20px;"></a>
-	<a href="http://www.ieee.org/">	<img src="image/mmmut.png" style="margin-top: 20px;"></a>
-	
-</div>
-
-</div>
-
-	</header>
 
     <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" style="margin-bottom: 0;">
   
@@ -149,19 +162,19 @@ margin-left:-10px;
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <li class="active"><a href="index.html">Home</a></li>
-             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About US <span class="caret"></span></a>
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
                <ul class="pull dropdown-menu " style="background-color: background-color: rgb(66, 165, 245);">
                   <li><a href="aboutmmmut.html">MMMUT</a></li>
-                  <li><a href="aboutjk.html">JKUT</a></li>
-                   <li><a href="aboutmani.html">Manipal</a></li>
-                   <li><a href="ieee.html">IEEE</a></li>
+                  <li><a href="aboutjk.html">	JKIAPT</a></li>
+                   <li><a href="aboutmani.html">Manipal University</a></li>
+                   <li><a href="https://www.springer.com">Springer</a></li>
                </ul>
         </li>
               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Committee <span class="caret"></span></a>
                <ul class="pull dropdown-menu " style="background-color: background-color: rgb(66, 165, 245);">
                    <li><a href="generalcommittee.html">General Chair </a></li>
                    <li><a href="advisory.html">Advisory Commitee </a></li>
-                   <li><a href="organizing.html">Organizing Commitee </a></li>
+                   <!--<li><a href="organizing.html">Organizing Commitee </a></li>-->
                    <li><a href="technical.html">Technical Program Committee </a></li>
                </ul>
         </li>
@@ -175,7 +188,7 @@ margin-left:-10px;
               <li><a href="papersub.html">Paper Submission</a></li>
               <li><a href="map.html">Local Information</a></li>
               
-              <li><a href="contact.html">Contact US</a></li>    
+              <li><a href="contact.html">Contact Us</a></li>    
             </ul>
             
           </div>
@@ -183,36 +196,40 @@ margin-left:-10px;
       </nav>
 
 
-<MARQUEE behavior="alternate" style="color: red; font-weight: bold;font-size: 20px; font-size: 20px;font-family: "the times new roman"; ">&nbsp; &nbsp; &nbsp; Notification of Paper Acceptance is under Process &nbsp;|&nbsp; 
-    <a href="doc/ICE3-2020_Schedule.pdf" target="_blank" style=" font-weight: bold;">Conference Schedule</a> &nbsp; | &nbsp; <a href="doc/Accommodation.pdf" style=" font-weight: bold;">Hotels and Campus Accommodation for Authors &nbsp; |&nbsp; <a href="speaker-keynote.html" style="color:red;">Keynote Speakers</a>&nbsp; &nbsp; &nbsp;   
-    </MARQUEE>
-    
 
-    <h1>General Chairs</h1>
+
+
+  <h1>General Chairs</h1>
     <h2>Patron</h2>
-
+    
     <div class="chair">
-        <div class="gen"></div>
+        <div class="gen">
+                    <img src="image/VC2.png" alt="">
+        </div>
         <div class="gen2">
             <h3 id='h3'>Prof. J.P. Pandey Vice-Chancellor, MMMUT Gorakhpur, Uttar Pradesh, India</h3>
         </div>
     </div>
     <!-- for whole box -->
-
+    
     <div class='patron'>
         <div class='vc'>
             <h1 class='h1'>General Chair</h1>
-
+    
             <!-- for inner photo and text -->
-
+    
             <div class='contain'>
-                <div class='img'></div>
+                <div class='img'>
+                    <img class='image'
+                        src="https://i1.rgstatic.net/ii/profile.image/483036266536961-1492176228416_Q128/Rajeev_Singh7.jpg"
+                        alt="">
+                </div>
                 <div class='text'>
                     <h5>Dr.Rajeev Singh, HoD EC Dept. University of Allahabad, UP India </h5>
                 </div>
             </div>
-
-
+    
+    
             <div class='contain'>
                 <div class='img'>
                     <img class='image' src="image/rajeev kumar chauhan.jpg" alt="">
@@ -221,373 +238,326 @@ margin-left:-10px;
                     <h5>Dr. Rajeev Kumar Chauhan, Hod EC Dept. MMMUT , Gorakhpur , India</h5>
                 </div>
             </div>
-
-
+    
+    
             <div class='contain'>
-                <div class='img'></div>
+                <div class='img'>
+                    <img class='image' src="image/Dr. Manish Tiwari.jpg" alt="">
+                </div>
                 <div class='text'>
                     <h5 style='color: red;'>Dr. Manish Tiwari , HoD ECED , Manipal University</h5>
                 </div>
             </div>
-
+    
         </div>
-
-
-
-       
-
-        <div class='vc'>
-            <h1 class='h1'>Organizing Chair</h1>
-        
-            <!-- for inner photo and text -->
-        
-            <div class='contain'>
-                <div class='img'>
-                    <img class='image' src="image/bp pandey.jpg" alt="">
-
-                </div>
-                <div class='text'>
-                    <h5>Dr.B.P.Pandey,EC Dept. MMMUT, Gorakhpur,India</h5>
-                </div>
-            </div>
-        
-        
-            <div class='contain'>
-                <div class='img'>
-                    <img class='image' src="image/dk.jpg" alt="">
-
-                </div>
-                <div class='text'>
-                    <h5>Dr. Dharmendra Kumar,EC Dept. MMMUT,Gorakhpur,India</h5>
-                </div>
-            </div>
-        
-        
-            <div class='contain'>
-                <div class='img'>
-                    <img class='image' src="image/mishra.jpg" alt="">
-                </div>
-                <div class='text'>
-                    <h5>Dr. Brijesh Mishra, EC Dept. MMMUT, Gorakhpur,India</h5>
-                </div>
-            </div>
-        
-        
-            <div class='contain'>
-                <div class='img'></div>
-                <div class='text'>
-                    <h5>University Of Allahbad</h5>
-                </div>
-            </div>
-        
-        
-            <div class='contain'>
-                <div class='img'></div>
-                <div class='text'>
-                    <h5 style='color: red;'>Dr. Dinesh Yadav, ECE Dept.Manipal University Jaipur</h5>
-                </div>
-            </div>
-        
-        </div>
-
-        <div class='vc'>
-            <h1 class='h1'>Organizing Co-Chair</h1>
-        
-            <!-- for inner photo and text -->
-        
-            <div class='contain'>
-                <div class='img'>
-                    <img class='image' src="image/mishra.jpg" alt="">
-                </div>
-                <div class='text'>
-                    <h5>Dr. Brijesh Mishra, EC Dept.MMMUT,Gorakhpur,India</h5>
-                </div>
-            </div>
-        
-        
-            <div class='contain'>
-                <div class='img'>
-                    <img class='image' src="image/manish.jpg" alt="">
-
-                </div>
-                <div class='text'>
-                    <h5>Dr. Manish Kumar,EC Dept.MMMUT ,Gorakhpur,India</h5>
-                </div>
-            </div>
-        
-        
-            <div class='contain'>
-                <div class='img'>
-                    <img class='image' src="image/rajan.jpg" alt="">
-
-                </div>
-                <div class='text'>
-                    <h5>Dr. Rajan Mishra, EC Dept. MMMUT,Gorakhpur,India</h5>
-                </div>
-            </div>
-        
-        
-            <div class='contain'>
-                <div class='img'>
-                    <img class='image' src="image/azam.jpg" alt="">
-
-                </div>
-                <div class='text'>
-                    <h5>Mr. Shadab Azam Siddique, EC Dept. MMMUT, Gorakhpur,India</h5>
-                </div>
-            </div>
-        
-        
-            <div class='contain'>
-                <div class='img'></div>
-                <div class='text'>
-                    <h5 style='color: red;'>Dr. Tarun Kr. Dubey, ECE Dept. Manipal University Jaipur</h5>
-                </div>
-            </div>
-        
-        
-            <div class='contain'>
-                <div class='img'></div>
-                <div class='text'>
-                    <h5>University of Allahbad</h5>
-                </div>
-            </div>
-        
-        </div>
-
-
+    
+    
+    
+    
         <div class='vc'>
             <h1 class='h1'>Track Chair</h1>
-        
+    
             <!-- for inner photo and text -->
-        
+    
             <div class='contain'>
                 <div class='img'>
                     <img class='image' src="image/verma.jpg" alt="">
-
+    
                 </div>
                 <div class='text'>
                     <h5>Dr. Shudhanshu Verma, EC Dept. MMMUT, Gorakhpur,India</h5>
                 </div>
             </div>
-        
-        
+    
+    
             <div class='contain'>
                 <div class='img'>
                     <img class='image' src="image/pratosh.jpg" alt="">
-
+    
                 </div>
                 <div class='text'>
                     <h5>Dr. Pratosh Kumar Pal, EC Dept. MMMUT, Gorakhpur, India</h5>
                 </div>
             </div>
-        
-        
-        
+    
+    
+    
             <div class='contain'>
-                <div class='img'></div>
+                <div class='img'>
+                    <img class='image' src="image/Suddhendu Das.jpg" alt="">
+    
+                </div>
                 <div class='text'>
                     <h5 style='color: red;'>Dr. Suddhendu Das Mahapatra, Manipal University Jaipur</h5>
                 </div>
             </div>
-
-            <div class='contain'>
-                <div class='img'></div>
-                <div class='text'>
-                    <h5>University of Allahbad</h5>
-                </div>
-            </div>
-        
+    
+    
+    
         </div>
-
-
+    
+    
         <div class='vc'>
             <h1 class='h1'>Publication Chair</h1>
-        
+    
             <!-- for inner photo and text -->
-        
+    
             <div class='contain'>
                 <div class='img'>
                     <img class='image' src="image/pooja.jpg" alt="">
-
+    
                 </div>
                 <div class='text'>
                     <h5>Dr.Pooja Lohia, EC Dept. MMMUT, Gorakhpur, India</h5>
                 </div>
             </div>
-        
-        
+    
+    
             <div class='contain'>
-                <div class='img'></div>
+                <div class='img'>
+                    <img class='image' src="image/satish.jpg" alt="">
+    
+                </div>
                 <div class='text'>
                     <h5>Dr. Satish Kumar, EC Dept. MMMUT, Gorakhpur, India</h5>
                 </div>
             </div>
-        
-        
+    
+    
             <div class='contain'>
-                <div class='img'></div>
+                <div class='img'>
+                    <img class='image' src="image/Tejpal.jpg" alt="">
+    
+                </div>
                 <div class='text'>
                     <h5 style='color: red;'>Dr. Tejpal, Manipal University Jaipur</h5>
                 </div>
             </div>
-        
-            <div class='contain'>
-                <div class='img'></div>
-                <div class='text'>
-                    <h5>University of Allahbad</h5>
-                </div>
-            </div>
-        
+    
+    
+    
         </div>
-
-
+    
+    
         <div class='vc'>
-            <h1 class='h1'>Technical Program Committee Chair</h1>
-        
+            <h1 class='h1'>Organizing Chair</h1>
+    
             <!-- for inner photo and text -->
-        
+    
             <div class='contain'>
-                <div class='img'></div>
+                <div class='img'>
+                    <img class='image' src="image/bp pandey.jpg" alt="">
+    
+                </div>
                 <div class='text'>
-                    <h5>Dr. K.V. Srivastava, EE Dept. IIT Kanpur, India</h5>
+                    <h5>Dr.B.P.Pandey,EC Dept. MMMUT, Gorakhpur,India</h5>
                 </div>
             </div>
-        
-        
+    
+    
             <div class='contain'>
-                <div class='img'></div>
+                <div class='img'>
+                    <img class='image' src="image/dk.jpg" alt="">
+    
+                </div>
                 <div class='text'>
-                    <h5>Dr. M.K. Meshram,EC Dept. IIT, BHU, India</h5>
+                    <h5>Dr. Dharmendra Kumar,EC Dept. MMMUT, Gorakhpur, India</h5>
                 </div>
             </div>
-        
-        
+    
+    
             <div class='contain'>
-                <div class='img'></div>
+                <div class='img'>
+                    <img class='image' src="image/mishra.jpg" alt="">
+                </div>
                 <div class='text'>
-                    <h5>Dr. Ghanshyam Singh, EC Dept. MNIT Jaipur, India</h5>
+                    <h5>Dr. Brijesh Mishra, EC Dept. MMMUT, Gorakhpur, India</h5>
                 </div>
             </div>
-        
-        
-        
+    
+    
             <div class='contain'>
-                <div class='img'></div>
+                <div class='img'>
+                    <img class='image' src="image/jhasir.jpg" alt="">
+    
+                </div>
                 <div class='text'>
-                    <h5>Dr. Rajneesh Srivastava, EC Dept. University of Allahabad, UP,
-                    India</h5>
+                    <h5> Dr. Shudhanshu Kumar Jha, University Of Allahbad</h5>
                 </div>
             </div>
-        
-        
-        
+    
+    
             <div class='contain'>
-                <div class='img'></div>
+                <div class='img'>
+                    <img class='image' src="image/dinesh-ece-new.jpg" alt="">
+    
+                </div>
                 <div class='text'>
-                    <h5>Dr. D.K. Srivastava, EC Dept. BIET, Jhansi</h5>
+                    <h5 style='color: red;'>Dr. Dinesh Yadav, ECE Dept.Manipal University Jaipur</h5>
                 </div>
             </div>
-        
-        
-            <div class='contain'>
-                <div class='img'></div>
-                <div class='text'>
-                    <h5>Dr. V. S. Tripathi, EC Dept. MNNIT Allahabad, UP, India</h5>
-                </div>
-            </div>
-        
+    
         </div>
-
-
+    
+        <div class='vc'>
+            <h1 class='h1'>Organizing Co-Chair</h1>
+    
+            <!-- for inner photo and text -->
+    
+            <div class='contain'>
+                <div class='img'>
+                    <img class='image' src="image/bk.jpg" alt="">
+                </div>
+                <div class='text'>
+                    <h5>Dr. Brijesh Kumar, EC Dept.MMMUT, Gorakhpur, India</h5>
+                </div>
+            </div>
+    
+    
+            <div class='contain'>
+                <div class='img'>
+                    <img class='image' src="image/manish.jpg" alt="">
+    
+                </div>
+                <div class='text'>
+                    <h5>Dr. Manish Kumar, EC Dept.MMMUT ,Gorakhpur, India</h5>
+                </div>
+            </div>
+    
+    
+            <div class='contain'>
+                <div class='img'>
+                    <img class='image' src="image/rajan.jpg" alt="">
+    
+                </div>
+                <div class='text'>
+                    <h5>Dr. Rajan Mishra, EC Dept. MMMUT, Gorakhpur, India</h5>
+                </div>
+            </div>
+    
+    
+            <div class='contain'>
+                <div class='img'>
+                    <img class='image' src="image/azam.jpg" alt="">
+    
+                </div>
+                <div class='text'>
+                    <h5>Mr. Shadab Azam Siddique, EC Dept. MMMUT, Gorakhpur,India</h5>
+                </div>
+            </div>
+    
+    
+            <div class='contain'>
+                <div class='img'>
+                    <img class='image' src="image/tarun-dubey.jpg" alt="">
+    
+                </div>
+                <div class='text'>
+                    <h5 style='color: red;'>Dr. Tarun Kr. Dubey, ECE Dept. Manipal University Jaipur</h5>
+                </div>
+            </div>
+    
+    
+            <div class='contain'>
+                <div class='img'>
+                    <img class='image' src="image/shudhakar.jpg" alt="">
+    
+                </div>
+                <div class='text'>
+                    <h5>Dr. Shudhakar Singh, University of Allahbad</h5>
+                </div>
+            </div>
+    
+        </div>
+    
+    
+    
+    
+    
         <div class='vc'>
             <h1 class='h1'>Publicity Chair</h1>
-        
+    
             <!-- for inner photo and text -->
-        
+    
             <div class='contain'>
                 <div class='img'>
                     <img class='image' src="image/tripathi.jpg" alt="">
-
+    
                 </div>
                 <div class='text'>
                     <h5>Shri, G.S Tripathi, EC Dept. MMMUT, Gorakhpur, India</h5>
                 </div>
             </div>
-        
-        
+    
+    
             <div class='contain'>
                 <div class='img'>
                     <img class='image' src="image/soni.jpg" alt="">
-
+    
                 </div>
                 <div class='text'>
                     <h5>Dr. S.K. Soni, EC Dept. MMMUT, Gorakhpur, India</h5>
                 </div>
             </div>
-        
-        
+    
+    
             <div class='contain'>
                 <div class='img'>
                     <img class='image' src="image/bharti.jpg" alt="">
-
+    
                 </div>
                 <div class='text'>
                     <h5>Shri G.D. Bharti, EC Dept. MMMUT, Gorakhpur, India</h5>
                 </div>
             </div>
-        
+    
             <div class='contain'>
                 <div class='img'>
                     <img class='image' src="image/sahu.jpg" alt="">
-
+    
                 </div>
                 <div class='text'>
                     <h5>Shri Anupam Shahu, EC Dept. MMMUT, Gorakhpur, India</h5>
                 </div>
             </div>
-        
+    
             <div class='contain'>
                 <div class='img'>
                     <img class='image' src="image/ritesh.jpg" alt="">
-
+    
                 </div>
                 <div class='text'>
                     <h5>Shri Ritesh Kumar, EC Dept. MMMUT, Gorakhpur, India</h5>
                 </div>
             </div>
-        
+    
             <div class='contain'>
                 <div class='img'>
                     <img class='image' src="image/deepak.jpg" alt="">
-
+    
                 </div>
                 <div class='text'>
                     <h5>Shri Deepak Kumar, EC Dept. MMMUT, Gorakhpur, India</h5>
                 </div>
             </div>
-        
+    
             <div class='contain'>
                 <div class='img'>
                     <img class='image' src="image/rukmani.jpg" alt="">
-
+    
                 </div>
                 <div class='text'>
                     <h5>Ms. Rukmani Singh, EC Dept. MMMUT, Gorakhpur, India</h5>
                 </div>
             </div>
-        
+    
         </div>
-
-
-        
-
+    
+    
+    
+    
     </div>
-
-
-
     <div></div>
-  
     <div class="col-md-12 associate-image">
         <div class="container">
          <div class="content-heading">
@@ -595,18 +565,18 @@ margin-left:-10px;
          </div> 
         <div class="associates"> 
          <ul>
-           <li><a href="#"><img src="http://www.wcaset.igrnet.org/IGRNET-INCLUDE/associates_image/1.jpg" alt=""></a></li>
-           <li><a href="#"><img src="http://www.wcaset.igrnet.org/IGRNET-INCLUDE/associates_image/2.jpg" alt=""></a></li>
-           <li><a href="#"><img src="http://www.wcaset.igrnet.org/IGRNET-INCLUDE/associates_image/3.jpg" alt=""></a></li>
-           <li><a href="#"><img src="http://www.wcaset.igrnet.org/IGRNET-INCLUDE/associates_image/4.jpg" alt=""></a></li>
-           <li><a href="#"><img src="http://www.wcaset.igrnet.org/IGRNET-INCLUDE/associates_image/5.jpg" alt=""></a></li>
-           <li><a href="#"><img src="http://www.wcaset.igrnet.org/IGRNET-INCLUDE/associates_image/6.jpg" alt=""></a></li>
-           <li><a href="#"><img src="http://www.wcaset.igrnet.org/IGRNET-INCLUDE/associates_image/7.jpg" alt=""></a></li>
-           <li><a href="#"><img src="http://www.wcaset.igrnet.org/IGRNET-INCLUDE/associates_image/8.jpg" alt=""></a></li>
-           <li><a href="#"><img src="http://www.wcaset.igrnet.org/IGRNET-INCLUDE/associates_image/9.jpg" alt=""></a></li>
-           <li><a href="#"><img src="http://www.wcaset.igrnet.org/IGRNET-INCLUDE/associates_image/10.jpg" alt=""></a></li>
-           <li><a href="#"><img src="http://www.wcaset.igrnet.org/IGRNET-INCLUDE/associates_image/11.jpg" alt=""></a></li>
-           <li><a href="#"><img src="http://www.wcaset.igrnet.org/IGRNET-INCLUDE/associates_image/12.jpg" alt=""></a></li> 
+           <li><a href="#"><img src="image/spr.png" alt=""></a></li>
+           <li><a href="#"><img src="image/spr.png" alt=""></a></li>
+           <li><a href="#"><img src="image/spr.png" alt=""></a></li>
+           <li><a href="#"><img src="image/spr.png" alt=""></a></li>
+           <li><a href="#"><img src="image/spr.png" alt=""></a></li>
+           <li><a href="#"><img src="image/spr.png" alt=""></a></li>
+           <li><a href="#"><img src="image/spr.png" alt=""></a></li>
+           <li><a href="#"><img src="image/spr.png" alt=""></a></li>
+           <li><a href="#"><img src="image/spr.png" alt=""></a></li>
+           <li><a href="#"><img src="image/spr.png" alt=""></a></li>
+           <li><a href="#"><img src="image/spr.png" alt=""></a></li>
+           <li><a href="#"><img src="image/spr.png" alt=""></a></li> 
          </ul>
          </div><!-- associates end here -->
         </div>
