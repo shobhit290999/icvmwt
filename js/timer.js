@@ -1,4 +1,4 @@
-var target_date = new Date("Feb 14, 2021 08:37:25").getTime() // set the countdown date
+var target_date = new Date("March 20, 2021 08:37:25").getTime() // set the countdown date
 var days, hours, minutes, seconds; // variables for time units
 
 var countdown = document.getElementById("tiles"); // get tag element
