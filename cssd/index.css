@@ -31,6 +31,10 @@ body h1{
     
 }
 
+.mine {
+    position: relative;
+    top: 40px;
+}
 
 .img1{
     max-width: 95%;
