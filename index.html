@@ -35,6 +35,103 @@
 
 </head>
 <style>
+	
+ul 
+      {
+        list-style: none;
+      }
+      .fa-check:hover
+      {
+        font-size: 1.5rem;
+      }
+      .modal .card .fa:hover
+      {
+        font-size: 1rem;
+      }
+
+    	 #myicons2  a
+    	{
+    		color:black;
+    		text-decoration-line: none;
+    	}
+
+
+
+#noticeContainer{
+    height: 68%;
+    width: 48%;
+    background-color: tomato;
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+    z-index: 20;
+   
+    
+}
+#deletNoticeBox{
+    display: inline-block;
+    position: relative;
+    left: 93%;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); */
+}
+.heading13{
+    text-align: center;
+    display:inline-block;
+    margin-left:20%;
+}
+.heading20{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+
+}
+
+#image10{
+    height: 90%;
+    width: 100%;
+}
+@media(max-width:1024px){
+	#noticeContainer{
+    height: 47%;
+    width: 91%;
+    background-color: tomato;
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+}
+
+#deletNoticeBox{
+    display: inline-block;
+    position: relative;
+    left: 86%;
+}
+
+.heading13{
+    text-align: center;
+    display:inline-block;
+    margin-left:0%;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+   #image10{
+    height: 90%;
+    width: 100%;
+}
+.heading20{
+    padding: 0px;
+
+}
+
+
+}
+
+	
+	
+	
+	
 
 .cho{
     font-size: 13px;
@@ -458,4 +555,82 @@ margin-left:-10px;
 <script type="text/javascript" src="js/timer.js"></script>
 
 <script src="jsd/home.js"></script>
+
+<!--notice box-->
+
+<script>
+	
+	(function($) {
+    var defaults={
+        sm : 540,
+        md : 720,
+        lg : 960,
+        xl : 1140,
+        navbar_expand: 'lg',
+        animation: true,
+        animateIn: 'fadeIn',
+    };
+    $.fn.bootnavbar = function(options) {
+
+        var screen_width = $(document).width();
+        settings = $.extend(defaults, options);
+
+        if(screen_width >= settings.lg){
+            $(this).find('.dropdown').hover(function() {
+                $(this).addClass('show');
+                $(this).find('.dropdown-menu').first().addClass('show');
+                if(settings.animation){
+                    $(this).find('.dropdown-menu').first().addClass('animated ' + settings.animateIn);
+                }
+            }, function() {
+                $(this).removeClass('show');
+                $(this).find('.dropdown-menu').first().removeClass('show');
+            });
+        }
+
+        $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+          if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+          }
+          var $subMenu = $(this).next(".dropdown-menu");
+          $subMenu.toggleClass('show');
+
+          $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+            $('.dropdown-submenu .show').removeClass("show");
+          });
+
+          return false;
+        });
+    };
+})(jQuery);
+
+// for notice box..
+
+let deletNoticeBox = document.getElementById('deletNoticeBox');
+console.log(deletNoticeBox);
+deletNoticeBox.addEventListener('click', () => {
+    let noticeContainer = document.getElementById('noticeContainer');
+    noticeContainer.style = 'display:none';
+
+});
+
+
+// for mobile view of the our team.
+
+let team1 = document.getElementById('team1');
+let team2 = document.getElementById('team2');
+let team3 = document.getElementById('team3');
+if(window.innerWidth<1024){
+    team1.style = 'width:90%';
+    team2.style = 'width:90%';
+    team3.style = 'width:90%';
+}
+console.log(team1,window.innerWidth);
+
+
+
+
+    </script>
+<!--end-->
+
 </html>
