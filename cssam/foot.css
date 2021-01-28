@@ -55,7 +55,7 @@
 	transition: all .25s ease-in;
 }
 p {
-	margin-bottom: 10px; text-align:justify;margin-left: -15px;
+	margin-bottom: 10px; text-align:justify;margin-left:-20px;
 }
 a:focus, a:hover {
 	color: #000;
